@@ -170,7 +170,7 @@ int main()
 					{
 						Seller* seller = new Seller();
 						fread(seller, sizeof(Seller), 1, stream);
-						std::cout << i + 1 << ". " << seller->Name << " " << seller->Surname << ": "; printf(".1lf\n", seller->Rating);
+						std::cout << i + 1 << ". " << seller->Name << " " << seller->Surname << ": "; printf("%.1lf\n", seller->Rating);
 						delete seller;
 					}
 
